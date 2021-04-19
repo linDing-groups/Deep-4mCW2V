@@ -60,12 +60,12 @@ def FP(test_Y,pre_test_y):
     FP=N-TN
     return FP
   
-data = np.array(pd.read_csv('/content/drive/MyDrive/222_vecs.csv')) #testing set
+data = np.array(pd.read_csv('/content/drive/MyDrive/134_vecs.csv')) #testing set
     
-X1 = data[0:215, 1:] #215 is the number of positive samples in testing set, '1' is the label of positive sample
-Y1 = data[0:215, 0] #'0' is the label of negative sample
-X2 = data[215:, 1:]
-Y2 = data[215:, 0]
+X1 = data[0:133, 1:] #133 is the number of positive samples in testing set, '1' is the label of positive sample
+Y1 = data[0:133, 0] #'0' is the label of negative sample
+X2 = data[133:, 1:]
+Y2 = data[133:, 0]
 X = np.concatenate([X1, X2], 0)
 Y = np.concatenate([Y1, Y2], 0)
 
