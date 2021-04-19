@@ -49,7 +49,6 @@ with open('Train_2Unsuper','ab') as f:
         f.write(open('Train_Neg2Unsuper','rb').read())
 
 #get model
-
 def getWord_model(word,num_features,min_count):
 	word_model = ""
 	if not os.path.isfile("Train_model1"):
@@ -94,19 +93,6 @@ def combine(Posfile, Negfile, Combfile):
 combine('Train_Pos.fasta','Train_Neg.fasta','Train_Comb.fasta')#'pos.fasta' contains positive samples with fasta format; 'neg.fasta' contains negative samples with fasta format; 'all.fasta' is a combination file of positive and negative samples.
 
 #obtain feature file with .npy format
-from gensim.models import Word2Vec
-from gensim.models.word2vec import LineSentence
-import pandas as pd
-import numpy as np
-import os
-import sys
-import math
-import random
-
-import warnings
-from sklearn import preprocessing
-import sklearn.preprocessing
-
 def getDNA_split(DNAdata,word):
 	DNAlist1 = []
 	#DNAlist2 = []
