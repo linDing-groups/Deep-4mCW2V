@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-from google.colab import drive
-drive.mount('/content/drive')
-
 import numpy as np
 import tensorflow as tf
 from tensorflow import keras
