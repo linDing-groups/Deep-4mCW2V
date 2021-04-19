@@ -80,7 +80,7 @@ def dnn_model(train_X, train_Y, test_X, test_Y, lr, epoch, batch_size):
                   metrics = ['acc',precision,recall,f1,TP,FN,TN,FP])
     print("compile")
     result = model.fit(train_X, train_Y, epochs = epoch, batch_size = 32, validation_data = (test_X, test_Y), shuffle = True)
-    model.save('Deep-4mCW2V.h5') #save model
+    model.save('/content/drive/MyDrive/Deep-4mCW2V/Deep-4mCW2V_model/save_model.h5') #save model
     pre_test_y = model.predict(test_X, batch_size = 50)
     pre_train_y = model.predict(train_X, batch_size = 50)
     test_auc = metrics.roc_auc_score(test_Y, pre_test_y)
@@ -90,7 +90,7 @@ def dnn_model(train_X, train_Y, test_X, test_Y, lr, epoch, batch_size):
     return test_auc, result
 
 # split data and output result
-data = np.array(pd.read_csv('222_vecs.csv'))#inputfile
+data = np.array(pd.read_csv('/content/drive/MyDrive/222_vecs.csv'))#inputfile
 X1 = data[0:215, 1:]#215 is the number of positive samples in training set, '1' is the label of positive sample
 Y1 = data[0:215, 0]#'0' is the label of negative sample
 X2 = data[215:, 1:]
