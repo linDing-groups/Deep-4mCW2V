@@ -17,13 +17,6 @@ N4-methylcytosine is a kind of DNA modification which could regulate multiple bi
     keras (tested 2.3.1)
     tensorflow (tested 2.1.0)
     
-    
-    pip install pandas
-    pip install numpy
-    pip install h5py
-    pip install theano
-    pip install genism
-    
 ## For Feature Generation
     W2V.py
 
