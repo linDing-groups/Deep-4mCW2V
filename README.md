@@ -15,7 +15,7 @@ N4-methylcytosine is a kind of DNA modification which could regulate multiple bi
     gensim (tested 3.8.1)
     sklearn (tested 0.19.1)
     keras (tested 2.3.1)
-    tensorflow (tested 1.2.1)
+    tensorflow (tested 2.1.0)
     
 ## For Feature Generation
     W2V.py
