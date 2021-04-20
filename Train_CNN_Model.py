@@ -105,7 +105,7 @@ print ("Y.shape: ", Y.shape)
 lr = 0.05 #learning rate
 epoch = 50
 batch_size = 32
-kf = KFold(n_splits = 5, shuffle = True, random_state = 20)
+kf = KFold(n_splits = 10, shuffle = True, random_state = 20)
 #kf = KFold(n_splits = 5, shuffle = False)
 kf = kf.split(X)
 
