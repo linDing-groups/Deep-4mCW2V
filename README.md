@@ -27,3 +27,4 @@ N4-methylcytosine is a kind of DNA modification which could regulate multiple bi
     Test.py
 ## Note
 For files with different input sequences, you need to pay attention to the modification of parameters in code.
+## Citation:
