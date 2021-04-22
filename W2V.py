@@ -57,13 +57,13 @@ def getWord_model(word,num_features,min_count):
 		# Set values for various parameters
 		num_features = int(num_features)	  # Word vector dimensionality
 		min_word_count = int(min_count)	  # Minimum word count
-		num_workers = 20		 # Number of threads to run in parallel并行运行的线程数
-		context = 20			# Context window size上下文窗口大小
-		downsampling = 1e-3	 # Downsample setting for frequent words常用词的下采样设置
+		num_workers = 20		 # Number of threads to run in parallel
+		context = 20			# Context window size
+		downsampling = 1e-3	 # Downsample setting for frequent words
 
-		# Initialize and train the model初始化和训练模型
+		# Initialize and train the model
 		print ("Training Word2Vec model...")
-		word_model = Word2Vec(sentence, workers=num_workers,						size=num_features, min_count=min_word_count, 						window=context, sample=downsampling, seed=1,iter = 50)
+		word_model = Word2Vec(sentence, workers=num_workers, size=num_features, min_count=min_word_count, window=context, sample=downsampling, seed=1,iter = 50)
 		word_model.init_sims(replace=False)
 		word_model.save("Train_model1")
 		#print word_model.most_similar("CATAGT")
