@@ -28,3 +28,4 @@ N4-methylcytosine is a kind of DNA modification which could regulate multiple bi
 ## Note
 For files with different input sequences, you need to pay attention to the modification of parameters in code.
 ## Citation:
+Zulfiqar, Hasan, Zi-Jie Sun, Qin-Lai Huang, Shi-Shi Yuan, Hao Lv, Fu-Ying Dao, Hao Lin, and Yan-Wen Li. "Deep-4mCW2V: A sequence-based predictor to identify N4-methylcytosine sites in Escherichia coli." Methods (2021), doi: 10.1016/j.ymeth.2021.07.011.
